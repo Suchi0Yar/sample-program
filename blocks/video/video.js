@@ -7,6 +7,7 @@ function insertVideo(link) {
     const iframe = document.createElement('iframe');
     iframe.src = link;
     iframe.classList.add('video-iframe');
+    iframe.setAttribute('allowfullscreen', '');
     
     const videoDiv = document.querySelector('.video');
     if (!videoDiv) {
