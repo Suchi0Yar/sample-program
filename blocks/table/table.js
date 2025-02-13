@@ -1,6 +1,6 @@
 async function fetchSpreadsheetData() {
     try {
-        const response = await fetch('https://main--sample-program--suchi0yar.aem.page/employee.json'); // Replace with your actual JSON file path
+        const response = await fetch('https://localhost:3000/employee.json'); // Replace with your actual JSON file path
         const data = await response.json();
         renderList(data);
     } catch (error) {
