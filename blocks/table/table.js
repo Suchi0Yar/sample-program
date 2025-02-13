@@ -1,6 +1,6 @@
 export default async function decorate(block) {
     try {
-      const response = await fetch("https://main--my-eds-site--sud0202.aem.live/sampledata.json");
+      const response = await fetch("http://localhost:3000/employee.json");
   
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
