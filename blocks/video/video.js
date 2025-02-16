@@ -20,4 +20,10 @@ function insertVideo(link) {
 }
 
 const driveLink = 'https://drive.google.com/file/d/1prFO2cRCUsLezTLqddQK4a2repB4AWAu/preview';
-insertVideo(driveLink);
+
+const button = document.createElement('button');
+button.textContent = 'Play Video';
+button.classList.add('video-button');
+button.addEventListener('click', () => insertVideo(driveLink));
+
+document.body.appendChild(button);
