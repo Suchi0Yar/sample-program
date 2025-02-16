@@ -1,0 +1,25 @@
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-table th, 
+.employee-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-table th {
+    background-color: #8bd6d1;
+    font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+    background-color: #e2a4a4;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
