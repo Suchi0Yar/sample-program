@@ -39,7 +39,7 @@ const loadScript = (url, callback, type) => {
   };
   
   const embedVimeo = (url, autoplay) => {
-    const [, video] = url.pathname.split('/');
+    const [, video] = url.pathname.split('https://youtu.be/vG45arltWXU?si=1wUsrlpSqF_3ohF5');
     const suffix = autoplay ? '?muted=1&autoplay=1' : '';
     const embedHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
         <iframe src="https://player.vimeo.com/video/${video}${suffix}" 

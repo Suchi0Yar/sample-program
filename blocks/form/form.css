@@ -1,0 +1,72 @@
+/* Form Container */
+.feedback-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e25c82;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox Layout for Form Fields */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Label Styles */
+.form-group label {
+    width: 150px; /* Ensures all labels are aligned properly */
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group select {
+    flex: 1;
+    width: calc(100% - 100px); /* Adjusts input width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Validation Error Message */
+.error-message {
+    color: rgb(248, 244, 244);
+    font-size: 12px;
+    text-align: left;
+    display: block;
+    margin-left: 160px; /* Aligns with inputs */
+}
+
+/* Submit Button */
+.feedback-form button {
+    width: 100%;
+    padding: 10px;
+    background: #56cede;
+    color: rgb(15, 2, 2);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background: #57ddec;
+}
